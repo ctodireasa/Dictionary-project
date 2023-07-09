@@ -8,10 +8,10 @@ function saveNewWord() {
 
 function verifyIfWordExists() {
     let wordToFind = document.getElementById("dictionary")
-    let wordsToVerify = document.getElementById("wordsToVerify")
+    let messageBox = document.getElementById("messageBox")
     if (dictionary.indexOf(wordToFind.value) == -1) {
-        wordsToVerify.innerHTML = "DOES NOT EXISTS"
+        messageBox.innerHTML = "DOES NOT EXISTS"
     } else {
-        wordsToVerify.innerHTML = "EXISTS"
+        messageBox.innerHTML = "EXISTS"
     }
 }
